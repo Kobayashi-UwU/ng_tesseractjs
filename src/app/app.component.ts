@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Import CommonModule
-import { OcrComponent } from './ocr/ocr.component'; // Import the OCR component
+import { OcrComponent } from './components/ocr/ocr.component'; // Import the OCR component
 
 @Component({
   selector: 'app-root',

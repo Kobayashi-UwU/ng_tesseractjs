@@ -1,0 +1,19 @@
+<div>
+  <h1>Angular OCR with Tesseract.js</h1>
+  <input type="file" (change)="onImageSelected($event)" accept="image/*" />
+  <p *ngIf="loading">Processing image...</p>
+  <p *ngIf="ocrResult && !loading">OCR Result:</p>
+  <pre>{{ ocrResult }}</pre>
+
+  <!-- Display the original image -->
+  <img
+    *ngIf="imageSrc"
+    [src]="imageSrc"
+    alt="Original Image"
+    style="max-width: 100%; margin-top: 10px"
+  />
+
+  <canvas #canvas style="border: 1px solid black; margin-top: 10px"></canvas>
+
+  <div style="font-weight: bold; margin-top: 10px">{{ tesseractTime }}</div>
+</div>

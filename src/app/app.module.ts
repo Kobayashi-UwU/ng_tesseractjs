@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { OcrComponent } from './ocr/ocr.component'; // Import the OCR component
+import { OcrComponent } from './components/ocr/ocr.component'; // Import the OCR component
 
 @NgModule({
   declarations: [
