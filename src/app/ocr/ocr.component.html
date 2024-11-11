@@ -1,0 +1,28 @@
+<div>
+  <h2>Image OCR Processor</h2>
+  <input type="file" (change)="onFileChange($event)" accept="image/*" />
+
+  <div *ngIf="isLoading">
+    <p>Processing...</p>
+  </div>
+
+  <div *ngIf="ocrResult">
+    <h3>OCR Result:</h3>
+    <pre>{{ ocrResult }}</pre>
+    <!-- Display the OCR result -->
+    <div style="font-weight: bold; margin-top: 10px">
+      {{ tesseractProcessTime }}
+    </div>
+  </div>
+
+  <!-- Display the original image and another canvas for bounding boxes -->
+  <div *ngIf="imageSrc" style="position: relative; display: inline-block">
+    <!-- Image Canvas -->
+    <canvas #imageCanvasRef></canvas>
+    <!-- Bounding Box Canvas -->
+    <canvas
+      #boundingBoxCanvasRef
+      style="position: absolute; top: 0; left: 0; pointer-events: none"
+    ></canvas>
+  </div>
+</div>
