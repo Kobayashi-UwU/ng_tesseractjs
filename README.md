@@ -1,8 +1,9 @@
 ## Project Detail
 This project tests the performance of TesseractJS under different conditions (On MacOS, SamsungA05) and how long it takes to run TesseractJS.
 
-## Performance Result
+## Test Result
 ```
+GalaxyA05
 Minimum Requirement
 Ram : 2-4 GB
 CPU : 1.5 GHz (Octa-core)
